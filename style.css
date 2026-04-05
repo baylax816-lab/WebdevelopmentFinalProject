@@ -1,4 +1,4 @@
-/* Base styling */
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,23 +6,23 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 20px;
-    text-align: center; /* Center everything by default */
+    text-align: center; 
 }
 
-/* Header */
+
 header {
     background-color: #b41f2e;
     color: white;
     padding: 20px;
-    text-align: center; /* Header content centered */
+    text-align: center; 
 }
 
-/* Navigation */
+
 nav {
     background-color: #000000;
     display: flex;
-    justify-content: center; /* center nav links horizontally */
-    flex-wrap: wrap; /* wrap if screen is small */
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 nav a {
@@ -30,7 +30,7 @@ nav a {
     padding: 15px 20px;
     text-decoration: none;
     display: inline-block;
-    margin: 5px; /* spacing between links */
+    margin: 5px;
     text-align: center; 
 }
 
@@ -39,31 +39,34 @@ nav a:hover {
     transition: 0.3s;
 }
 
-/* Main content */
+
 main {
     flex: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column; 
 }
 
-/* Section headings aligned left */
+
 main h2 {
     text-align: left;
 }
 
-/* Keep paragraphs, links, and articles centered */
+
+
 main p,
 main a,
-main h3,
+
 main article {
     text-align: center;
 }
 
 main img {
     display: block;
-    margin: 20px auto; /* center images */
+    margin: 20px auto; 
 }
 
-/* Footer */
+
 footer {
     background-color: #000000;
     color: white;
