@@ -31,8 +31,13 @@ main {
 }
 
 .card {
-    max-width: 800px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;     /* centers horizontally */
     width: 100%;
+    max-width: 800px;     /* keeps it centered and not too wide */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
 footer {
