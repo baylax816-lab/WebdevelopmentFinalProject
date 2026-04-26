@@ -86,9 +86,7 @@ Note: API key is stored in a separate config file for organizational purposes in
 ## 🔮 Future Improvements
 
 - Add event filtering or search functionality
-- Implement dark mode toggle
 - Improve mobile navigation (hamburger menu)
-- Secure API key using backend or environment variables
 - Add user login or personalization features
 - Expand API integrations (campus announcements, maps, etc.)
 
