@@ -45,3 +45,90 @@ footer {
     color: white;
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+
+    /* Stack nav links vertically */
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    /* Reduce header size */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Make cards tighter */
+    .card {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    /* Scale images down slightly */
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* Buttons easier to tap */
+    .btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* Smaller headings */
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Reduce padding for small screens */
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    /* Cards full width */
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Smaller images */
+    img {
+        max-width: 100%;
+    }
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #000;
+}
+
+.dark-mode header {
+    background-color: #8b1a24;
+}

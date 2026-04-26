@@ -1,18 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
+    // -----------------------------
+    // DATE DISPLAY
+    // -----------------------------
     const dateEl = document.getElementById("date");
     if (dateEl) {
         const today = new Date();
         dateEl.textContent = today.toDateString();
     }
 
-
+    // -----------------------------
+    // WEATHER API
+    // -----------------------------
     const weatherEl = document.getElementById("weather-data");
 
     if (weatherEl) {
 
-        const apiKey = "a7e0a0b94bd9af2b7e31a4652f2b8f5d"; 
+        const apiKey = "a7e0a0b94bd9af2b7e31a4652f2b8f5d"; // replace if needed
         const city = "Kansas City, US";
 
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
@@ -34,13 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
                     ${desc}
                 `;
             })
-            .catch(err => {
-                console.log(err);
+            .catch(() => {
                 weatherEl.textContent = "Weather error.";
             });
     }
 
-});
-document.getElementById("toggleBtn").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+    // -----------------------------
+    // DARK MODE TOGGLE (NEW FEATURE)
+    // -----------------------------
+    const toggleBtn = document.getElementById("toggleBtn");
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    }
+
 });
