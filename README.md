@@ -70,6 +70,7 @@ This project demonstrates front-end web development skills using HTML, CSS, Boot
 
 This project uses the OpenWeather API to fetch live weather data.  
 For security in a production environment, API keys should be stored securely and not exposed in client-side JavaScript.
+Note: API key is stored in a separate config file for organizational purposes in this educational project.
 
 ---
 
